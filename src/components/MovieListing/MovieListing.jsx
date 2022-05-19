@@ -37,21 +37,13 @@ const MovieListing = () => {
       <div className='movie-list'>
         <h2>Movies</h2>
         <div className='movie-container'>
-          {Object.keys(movies).length === 0 ? (
-            <div>Loading......</div>
-          ) : (
             <Slider {...settings}>{renderMovies}</Slider>
-          )}
         </div>
       </div>
       <div className='movie-list'>
         <h2>Shows</h2>
         <div className='movie-container'>
-          {Object.keys(shows).length === 0 ? (
-            <div>Loading......</div>
-          ) : (
             <Slider {...settings}>{renderShows}</Slider>
-          )}
         </div>
       </div>
     </div>
