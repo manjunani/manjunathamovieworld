@@ -17,7 +17,7 @@ export const fetchAsyncMovieOrShowDetail = createAsyncThunk(
   'movies/fetchAsyncMovieOrShowDetail',
   async (id) => {
     const response = await axios.get(
-      `http://www.omdbapi.com/?apiKey=${apiKey}&i=${id}&plot=full`
+      `https://www.omdbapi.com/?apiKey=${apiKey}&i=${id}&plot=full`
     );
     return response.data;
   }
@@ -28,7 +28,7 @@ export const fetchAsyncSeries = createAsyncThunk(
   async (term) => {
     const movieText = term.toLowerCase();
     const response = await axios.get(
-      `http://www.omdbapi.com/?apiKey=${apiKey}&s=${movieText}&type=series`
+      `https://www.omdbapi.com/?apiKey=${apiKey}&s=${movieText}&type=series`
     );
     return response.data;
   }
