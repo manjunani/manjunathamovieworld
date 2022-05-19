@@ -1,0 +1,11 @@
+@import '../../common/colors.scss';
+
+.movie-list{
+    margin: 40px;
+    h2{
+        color:$font-secondary;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+}
+
